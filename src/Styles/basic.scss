@@ -1,0 +1,25 @@
+$primary: #F6E1C3;
+$secondary: #E9A178;
+$burgandy: #A84448;
+$violet: #7A3E65;
+
+.text-center{
+    text-align: center;
+}
+
+.auth-header{
+    margin: 0 0 20px;
+    color: $burgandy;
+}
+
+.text-info{
+    margin: 0;
+    a{
+        text-decoration: none;
+        color: $burgandy;
+
+        &:active, &:hover, &:focus{
+            color: $burgandy;
+        }
+    }
+}

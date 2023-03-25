@@ -1,0 +1,37 @@
+.button{
+    margin: 15px 0;
+    color: $burgandy;
+    border: 1px solid $burgandy;
+    background-color: rgba($primary, 0.15);
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover, &:active{
+        background: $burgandy;
+        color: $primary;
+        border: 1px solid $primary;
+        transition: all 0.15s ease-in-out;
+    }
+    &:focus{
+        background-color: $burgandy;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+    &[disabled]{
+        background: rgba($burgandy, 0.5);
+        color: rgba($primary, 0.75);
+        border: 1px solid rgba($burgandy, 0.5);
+    }
+}
+
+.sign-out{
+    background: #f6e1c3;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    .button{
+        margin-right: 15px;
+    }
+}

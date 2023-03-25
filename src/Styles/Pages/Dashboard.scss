@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: #6868AC;
+}
+
+.mint {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  text-shadow: -15px 5px 20px #ced0d3;
+  letter-spacing: 0.125em;
+  text-align: center;
+  color: $violet;
+  text-shadow: 
+  3px 2px 0px #90B1E0,
+  3px 4px 0px #6868AC, 
+  3px 6px 0px #EF5097, 
+  3px 8px 0px  #FF80BF, 
+  3px 10px 0px #FFD662, 
+  3px 12px 0px #FFB650;
+}
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    .list-container{
+        height: 100vh;
+        width: 100%;
+        background:  #f6e1c3;
+
+        .title-wrapper{
+            text-align: center;
+            display: block;
+            padding: 45px 0 15px;
+
+            .title{
+                margin: 0;
+
+            }
+        }
+        .list-wrapper{
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            .list-add-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .list-input{
+                    width: 500px;
+                    height: 45px;
+                    padding: 5px;
+                    border-radius: 4px;
+                    border: 1px solid $burgandy;
+                    background-color: rgba($primary, 0.15);
+                    margin-right: 8px;
+
+                }
+                .add-list-button{
+                    height: 45px;
+                }
+            }
+            .todo-list-items{
+                list-style: none;
+                // background: white;
+                display: block;
+                padding: 0;
+                overflow-y: scroll;
+                max-height: 100vh;
+                // border-radius: 5px;
+                li.list-items{
+                    padding: 20px 5px;
+                    border-bottom: 1px solid #efefef;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    input[type="checkbox"]{
+                        width: 25px;
+                    }
+
+                    &:last-child{
+                        border-radius: none;
+                    }
+                    &:hover, &:active{
+                        background: darken($color: $burgandy, $amount: 0.5);
+                        color: $primary;
+                    }
+                    span{
+                        width: calc(100% - 220px);
+                        text-align: left;
+                        margin-right: 20px;
+                        word-break: break-word;
+                        &.checked{
+                            text-decoration: line-through;
+                            text-decoration-color: $burgandy;
+    
+                            &:hover, &:active{
+                                text-decoration-color: $primary;
+                            }
+                        }
+                        input{
+                            width: 100%;
+                        }
+                    }
+
+                    button{
+                        color: white;
+                        background: $violet;
+                        border: 1px solid $primary;
+                        padding: 8px 16px;
+                        margin: 0;
+                        width: 100px;
+                        cursor: pointer;
+                        margin-right: 10px;
+                        &:hover{
+                            background-color: darken($color: $violet, $amount: 0.5);
+                            box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.26);
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

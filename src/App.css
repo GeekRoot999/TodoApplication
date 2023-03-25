@@ -1,4 +1,11 @@
-.App {
+/* .App {
+  text-align: center;
+} */
+
+.App{
+  height: 100vh;
+  width: 100%;
+  background:  #f6e1c3;
   text-align: center;
 }
 
